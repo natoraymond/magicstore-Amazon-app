@@ -6,6 +6,7 @@ import Checkout from '../Pages/Checkout/Checkout'
 import Login from '../Pages/Login/Login';
 import Footer from '../Components/Footer/Footer';
 
+
 function App() {
   return (
     <Router>      

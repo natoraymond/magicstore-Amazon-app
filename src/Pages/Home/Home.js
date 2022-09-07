@@ -1,49 +1,123 @@
 import React from 'react'
 import './Home.css'
 import Product from '../../Components/Products/Product'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home container-fluid">
+
       <div className="home__container">
         <img
-          className="home__image"
+          className="home__image img-responsive"
           src="Amaz.jpeg"
           alt="Amazo"
         />
 
-        <div className="home__row">
-          <Product
-            id="12321341"
-            title="40 Ultra Slim Full HD Smart Tv"
-            price={11.96}
-            rating={5}
-            image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/S/W/114315_1574843467.jpg"
-          />
-          <Product
-            id="49538094"
-            title="Amazing Smart Tv With Dual Screen - 43 inch "
-            price={239.0}
-            rating={4}
-            image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/T/96406_1630030632.jpg"
-          />
-          <Product
-            id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
-          />
-          <Product
-            id="49538094"
-            title="Designer TV Stand - Coffee Brown (Lagos Only)"
-            price={239.0}
-            rating={4}
-            image="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/73/145233/1.jpg?9473"
-          />
-        </div>
+        <Row>
+          <Col md={3}>
+            <Product
+              id="12321341"
+              title="40 Ultra Slim Full HD Smart Tv"
+              price={11.96}
+              rating={5}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/S/W/114315_1574843467.jpg"
+            />
+          </Col>
 
-        <div className="home__row">
+          <Col md={3}>
+            <Product
+              id="49538094"
+              title="Amazing Smart Tv With Dual Screen - 43 inch "
+              price={239.0}
+              rating={4}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/T/96406_1630030632.jpg"
+            />
+          </Col>
+
+          <Col md={3}>
+            <Product
+              id="49538094"
+              title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+              price={239.0}
+              rating={4}
+              image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            />
+          </Col>
+
+          <Col md={3}>
+            <Product
+              id="49538094"
+              title="Designer TV Stand - Coffee Brown (Lagos Only)"
+              price={239.0}
+              rating={4}
+              image="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/73/145233/1.jpg?9473"
+            />
+          </Col>
+        </Row>
+
+
+        <Row>
+          <Col md={6}>
+            <Product
+              id="12321341"
+              title="40 Ultra Slim Full HD Smart Tv"
+              price={11.96}
+              rating={5}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/S/W/114315_1574843467.jpg"
+            />
+          </Col>
+
+          <Col md={6}>
+            <Product
+              id="49538094"
+              title="Amazing Smart Tv With Dual Screen - 43 inch "
+              price={239.0}
+              rating={4}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/T/96406_1630030632.jpg"
+            />
+          </Col>          
+        </Row>
+
+        <Row>
+          <Col md={4}>
+            <Product
+              id="12321341"
+              title="40 Ultra Slim Full HD Smart Tv"
+              price={11.96}
+              rating={5}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/S/W/114315_1574843467.jpg"
+            />
+          </Col>
+
+          <Col md={4}>
+            <Product
+              id="49538094"
+              title="Amazing Smart Tv With Dual Screen - 43 inch "
+              price={239.0}
+              rating={4}
+              image="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/T/96406_1630030632.jpg"
+            />
+          </Col>
+
+          <Col md={4}>
+            <Product
+              id="49538094"
+              title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+              price={239.0}
+              rating={4}
+              image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            />
+          </Col>          
+        </Row>
+
+
+
+
+
+
+
+        {/* <div className="home__row row">
           <Product
             id="4903850"
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
@@ -81,7 +155,7 @@ export default function Home() {
             image="https://www.pngmart.com/files/6/Washing-Machine-PNG-File.png"
           />
         </div>
-        <div className="home__row">
+        <div className="home__row row">
           <Product
             id="4903850"
             title="SAMSUNG Galaxy S21 FE 5G Cell Phone, Factory Unlocked Android Smartphone, 128GB, 120Hz Display Screen, Pro "
@@ -122,7 +196,7 @@ export default function Home() {
         </div>
 
 
-        <div className="home__row">
+        <div className="home__row row">
           <Product
             id="90829332"
             title="HAIER LE32K6600GA 32 inch Android Smart LED TV
@@ -133,7 +207,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="home__row">
+        <div className="home__row row">
           <Product
             id="33689824"
             title="DuroMax DS4000S Portable Generator, Yellow/Black "
@@ -162,7 +236,7 @@ export default function Home() {
             rating={3}
             image="https://criticalpower.com/wp-content/uploads/2019/04/Cummins-Generator.jpg"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
